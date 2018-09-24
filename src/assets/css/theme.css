@@ -36,8 +36,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  text-align: center;
-  background-color: #000; }
+  text-align: center; }
   #home-parallax .bg-parallax {
     background: url("../img/home-bg.png") no-repeat;
     background-size: cover !important;
@@ -58,14 +57,16 @@
 */
 @media screen and (min-width: 1171px) {
   .navbar {
-    padding: 25px 0;
+    padding: 15px 0;
     transition: all 0.5s ease-in-out;
-    background: transparent; }
+    background: transparent;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid; }
     .navbar .navbar-brand .navbar-logo {
       height: 60px;
       width: 60px; }
     .navbar.navbar-shrink {
       background: #fff;
+      border-bottom: #343434 1px solid;
       padding: 10px 0;
       transition: all 0.5s ease-in-out; }
       .navbar.navbar-shrink .navbar-logo {

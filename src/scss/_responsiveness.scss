@@ -3,9 +3,10 @@
 */
 @include mediaXl {
   .navbar {
-    padding: 25px 0;
+    padding: 15px 0;
     @include easeOut;
     background: transparent;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
 
     .navbar-brand {
       .navbar-logo {
@@ -18,6 +19,7 @@
 
     &.navbar-shrink {
       background: #fff;
+      border-bottom: #343434 1px solid;
       padding: 10px 0;
       @include easeOut;
 
