@@ -9,26 +9,28 @@
 /*
 * Variables
 */
-.navbar .navbar-brand .navbar-logo {
-  height: 50px;
-  width: 50px; }
-
-.navbar .navbar-brand .text-logo {
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  font-size: 1em;
-  letter-spacing: 0.2rem;
-  color: #007acc;
-  text-transform: uppercase; }
-
-.navbar .nav-item .nav-link {
-  text-transform: uppercase;
-  padding-right: 1em !important;
-  padding-left: 1em !important;
-  letter-spacing: 0.1em; }
-  .navbar .nav-item .nav-link:hover {
-    color: #007acc;
-    transition: all 0.5s ease-in-out; }
+.navbar {
+  background: #fff; }
+  .navbar .navbar-brand .navbar-logo {
+    height: 35px;
+    width: 35px; }
+  .navbar .navbar-brand .text-logo {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 0.25rem;
+    color: #1c1c1c;
+    text-transform: uppercase; }
+  .navbar .nav-item .nav-link {
+    font-size: 0.95em;
+    color: #000;
+    text-transform: uppercase;
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+    letter-spacing: 0.1em; }
+    .navbar .nav-item .nav-link:hover {
+      color: #007acc;
+      transition: all 0.5s ease-in-out; }
 
 #home-parallax {
   height: 100vh;
@@ -51,6 +53,45 @@
     position: relative;
     z-index: 2; }
 
+/*
+* Widescreens
+*/
+@media screen and (min-width: 1171px) {
+  .navbar {
+    padding: 25px 0;
+    transition: all 0.5s ease-in-out;
+    background: transparent; }
+    .navbar .navbar-brand .navbar-logo {
+      height: 60px;
+      width: 60px; }
+    .navbar.navbar-shrink {
+      background: #fff;
+      padding: 10px 0;
+      transition: all 0.5s ease-in-out; }
+      .navbar.navbar-shrink .navbar-logo {
+        height: 35px;
+        width: 35px;
+        transition: all 0.5s ease-in-out; } }
+
+/*
+* Desktop & Laptops
+*/
+/*
+* Tablets & Small Laptops
+*/
+/*
+* Smartphones
+*/
+@media screen and (max-width: 500px) {
+  #home-parallax .home-content h1 {
+    font-size: 2em; }
+  #home-parallax .home-content h2 {
+    font-size: 0.95em;
+    margin-bottom: 20px; } }
+
+/*
+* Small Phones
+*/
 /*
 * Theme
 */

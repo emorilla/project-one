@@ -1,0 +1,65 @@
+/*
+* Widescreens
+*/
+@include mediaXl {
+  .navbar {
+    padding: 25px 0;
+    @include easeOut;
+    background: transparent;
+
+    .navbar-brand {
+      .navbar-logo {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+
+
+    &.navbar-shrink {
+      background: #fff;
+      padding: 10px 0;
+      @include easeOut;
+
+      .navbar-logo {
+        height: 35px;
+        width: 35px;
+        @include easeOut;
+      }
+    }
+  }
+}
+
+/*
+* Desktop & Laptops
+*/
+@include mediaLg {}
+
+/*
+* Tablets & Small Laptops
+*/
+@include mediaMd {}
+
+/*
+* Smartphones
+*/
+@include mediaSm {
+  #home-parallax {
+
+    .home-content {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 0.95em;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+/*
+* Small Phones
+*/
+@include mediaXsm {}
