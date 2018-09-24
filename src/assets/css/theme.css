@@ -1,6 +1,35 @@
 /*
+*Fonts
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800");
+/*
 *Components
 */
+/*
+* Variables
+*/
+.navbar .navbar-brand .navbar-logo {
+  height: 50px;
+  width: 50px; }
+
+.navbar .navbar-brand .text-logo {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.2rem;
+  color: #007acc;
+  text-transform: uppercase; }
+
+.navbar .nav-item .nav-link {
+  text-transform: uppercase;
+  padding-right: 1em !important;
+  padding-left: 1em !important;
+  letter-spacing: 0.1em; }
+  .navbar .nav-item .nav-link:hover {
+    color: #007acc;
+    transition: all 0.5s ease-in-out; }
+
 #home-parallax {
   height: 100vh;
   position: relative;
@@ -39,3 +68,22 @@ body {
   color: #000;
   margin: 0;
   padding: 0; }
+
+h1.title,
+h2.title,
+h3.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1.2; }
+
+h1.sub-heading,
+h2.sub-heading,
+h3.sub-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }

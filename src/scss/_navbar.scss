@@ -1,1 +1,33 @@
 // Navigation
+.navbar {
+  .navbar-brand {
+    .navbar-logo {
+      height: 50px;
+      width: 50px;
+    }
+
+    .text-logo {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      letter-spacing: 0.2rem;
+      color: $secondary-color;
+      text-transform: uppercase;
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      text-transform: uppercase;
+      padding-right: 1em !important;
+      padding-left: 1em !important;
+      letter-spacing: 0.1em;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+
+    }
+  }
+}
