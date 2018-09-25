@@ -10,7 +10,8 @@
 * Variables
 */
 .navbar {
-  background: #fff; }
+  background: #fff;
+  border-bottom: #343434 1px solid; }
   .navbar .navbar-brand .navbar-logo {
     height: 35px;
     width: 35px; }
@@ -28,15 +29,18 @@
     padding-right: 1em !important;
     padding-left: 1em !important;
     letter-spacing: 0.1em; }
+    .navbar .nav-item .nav-link .active {
+      color: #1c1c1c; }
     .navbar .nav-item .nav-link:hover {
       color: #007acc;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
 
 #home-parallax {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  background-color: #444; }
   #home-parallax .bg-parallax {
     background: url("../img/home-bg.png") no-repeat;
     background-size: cover !important;
@@ -58,7 +62,7 @@
 @media screen and (min-width: 1171px) {
   .navbar {
     padding: 15px 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: transparent;
     border-bottom: rgba(255, 255, 255, 0.5) 1px solid; }
     .navbar .navbar-brand .navbar-logo {
@@ -68,11 +72,11 @@
       background: #fff;
       border-bottom: #343434 1px solid;
       padding: 10px 0;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       .navbar.navbar-shrink .navbar-logo {
         height: 35px;
         width: 35px;
-        transition: all 0.5s ease-in-out; } }
+        transition: all 0.3s ease-in-out; } }
 
 /*
 * Desktop & Laptops
@@ -84,6 +88,10 @@
 * Smartphones
 */
 @media screen and (max-width: 500px) {
+  .navbar .text-logo {
+    display: none; }
+  .navbar .nav-item .nav-item {
+    margin-left: 0; }
   #home-parallax .home-content h1 {
     font-size: 2em; }
   #home-parallax .home-content h2 {

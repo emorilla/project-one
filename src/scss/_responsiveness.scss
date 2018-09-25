@@ -2,6 +2,7 @@
 * Widescreens
 */
 @include mediaXl {
+
   .navbar {
     padding: 15px 0;
     @include easeOut;
@@ -14,8 +15,6 @@
         width: 60px;
       }
     }
-
-
 
     &.navbar-shrink {
       background: #fff;
@@ -46,6 +45,19 @@
 * Smartphones
 */
 @include mediaSm {
+
+  .navbar {
+    .text-logo {
+      display: none;
+    }
+
+    .nav-item {
+      .nav-item {
+        margin-left: 0;
+      }
+    }
+  }
+
   #home-parallax {
 
     .home-content {

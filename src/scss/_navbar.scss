@@ -1,6 +1,7 @@
 // Navigation
 .navbar {
   background: #fff;
+  border-bottom: #343434 1px solid;
 
   .navbar-brand {
     .navbar-logo {
@@ -19,6 +20,7 @@
   }
 
   .nav-item {
+
     .nav-link {
       font-size: 0.95em;
       color: #000;
@@ -26,6 +28,10 @@
       padding-right: 1em !important;
       padding-left: 1em !important;
       letter-spacing: 0.1em;
+
+      .active {
+        color: $primary-color;
+      }
 
       &:hover {
         color: $secondary-color;
