@@ -89,7 +89,7 @@
 */
 @media screen and (min-width: 320px) and (max-width: 576px) {
   .lead {
-    font-size: 0.9em; }
+    font-size: 0.95em; }
   .navbar .text-logo {
     display: none; }
   .navbar .nav-item .nav-item {
@@ -148,5 +148,5 @@ h3.sub-heading {
   color: #fff;
   border-radius: 0.8em; }
   #social-page .fab:hover {
-    color: #007acc;
+    background: #007acc;
     transition: all 0.3s ease-in-out; }
