@@ -59,7 +59,7 @@
 /*
 * Widescreens
 */
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1200px) {
   .navbar {
     padding: 15px 0;
     transition: all 0.3s ease-in-out;
@@ -87,7 +87,9 @@
 /*
 * Smartphones
 */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .lead {
+    font-size: 0.9em; }
   .navbar .text-logo {
     display: none; }
   .navbar .nav-item .nav-item {
@@ -96,11 +98,10 @@
     font-size: 2em; }
   #home-parallax .home-content h2 {
     font-size: 0.95em;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  #social-page a .fab {
+    font-size: 1em; } }
 
-/*
-* Small Phones
-*/
 /*
 * Theme
 */
@@ -137,3 +138,15 @@ h3.sub-heading {
   font-size: 1.5em;
   letter-spacing: 0.2em;
   text-transform: uppercase; }
+
+#social-page .fab {
+  background: #1c1c1c;
+  font-size: 3em;
+  width: 1.6em;
+  text-align: center;
+  line-height: 1.6em;
+  color: #fff;
+  border-radius: 0.8em; }
+  #social-page .fab:hover {
+    color: #007acc;
+    transition: all 0.3s ease-in-out; }

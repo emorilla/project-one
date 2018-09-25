@@ -57,4 +57,20 @@ h3 {
   }
 }
 
-// About Page
+// Social Page
+#social-page {
+  .fab {
+    background: $primary-color;
+    font-size: 3em;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    color: #fff;
+    border-radius: 0.8em;
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}

@@ -46,6 +46,10 @@
 */
 @include mediaSm {
 
+  .lead {
+    font-size: 0.9em;
+  }
+
   .navbar {
     .text-logo {
       display: none;
@@ -71,9 +75,11 @@
       }
     }
   }
-}
 
-/*
-* Small Phones
-*/
-@include mediaXsm {}
+  #social-page {
+    a .fab {
+      font-size: 1em;
+    }
+  }
+
+}
