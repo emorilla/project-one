@@ -57,8 +57,38 @@ h3 {
   }
 }
 
+// Core Values 
+#core-values {
+  margin-bottom: 0;
+
+  .box {
+    margin-bottom: 30px;
+
+    .fas {
+      font-size: 3em;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1em;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
+  }
+
+}
+
+// About Page
+#about-page {
+  margin-top: -70px;
+}
+
 // Social Page
 #social-page {
+
   .fab {
     background: $primary-color;
     font-size: 3em;
