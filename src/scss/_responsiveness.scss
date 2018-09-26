@@ -46,6 +46,11 @@
 */
 @include mediaSm {
 
+  body,
+  html {
+    font-size: 0.9em;
+  }
+
   .lead {
     font-size: 0.95em;
   }

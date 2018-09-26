@@ -10,6 +10,18 @@ $(document).ready(function () {
     })
   });
 
+  // Smooth Scrolling
+  $('.page-scroll').click(function (e) {
+
+    const linkHref = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top - 60
+    }, 1000, 'easeInOutExpo');
+
+    e.preventDefault();
+  })
+
   // Init ScrollMagic
   const controller = new ScrollMagic.Controller();
 
