@@ -1,13 +1,26 @@
+// Navbar Shrink
 $(document).ready(function () {
-  // Navbar Shrink
-  $(document).ready(function () {
-    $(window).scroll(function () {
-      if ($(document).scrollTop() > 50) {
-        $('.navbar').addClass('navbar-shrink');
-      } else {
-        $('.navbar').removeClass('navbar-shrink');
+
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 50) {
+      $('.navbar').addClass('navbar-shrink');
+    } else {
+      $('.navbar').removeClass('navbar-shrink');
+    }
+  })
+
+  // Active link switching 
+  $(window).scroll(function () {
+    const scrollbarLocation = $(this).scrollTop();
+
+    $('.page-scroll').each(function () {
+      const sectionOffset = $(this.hash).offset().top - 80
+
+      if (sectionOffset <= scrollbarLocation) {
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
       }
-    })
+    });
   });
 
   // Smooth Scrolling
@@ -16,10 +29,12 @@ $(document).ready(function () {
     const linkHref = $(this).attr('href');
 
     $('html, body').animate({
-      scrollTop: $(linkHref).offset().top - 60
+      scrollTop: $(linkHref).offset().top - 57
     }, 1000, 'easeInOutExpo');
 
     e.preventDefault();
+
+    $('.navbar-collapse').collapse('hide');
   })
 
   // Init ScrollMagic

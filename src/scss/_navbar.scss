@@ -20,23 +20,18 @@
   }
 
   .nav-item {
+    padding: 8px 0;
 
     .nav-link {
       font-size: 0.95em;
-      color: #000;
       text-transform: uppercase;
-      padding-right: 1em !important;
-      padding-left: 1em !important;
       letter-spacing: 0.1em;
+      padding: 0 !important;
 
-      .active {
-        color: $primary-color;
-      }
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut;
-      }
+      // &:hover {
+      //   color: $secondary-color;
+      //   @include easeOut;
+      // }
 
     }
   }

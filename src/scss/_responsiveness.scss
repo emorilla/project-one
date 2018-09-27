@@ -16,6 +16,11 @@
       }
     }
 
+    .nav-item {
+      padding-right: 1em !important;
+      padding-left: 1em !important;
+    }
+
     &.navbar-shrink {
       background: #fff;
       border-bottom: #343434 1px solid;
@@ -60,11 +65,7 @@
       display: none;
     }
 
-    .nav-item {
-      .nav-item {
-        margin-left: 0;
-      }
-    }
+    .nav-item {}
   }
 
   #home-parallax {
