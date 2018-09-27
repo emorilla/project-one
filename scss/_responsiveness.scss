@@ -1,0 +1,91 @@
+/*
+* Widescreens
+*/
+@include mediaXl {
+
+  .navbar {
+    padding: 15px 0;
+    @include easeOut;
+    background: transparent;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+
+    .navbar-brand {
+      .navbar-logo {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    .nav-item {
+      padding-right: 1em !important;
+      padding-left: 1em !important;
+    }
+
+    &.navbar-shrink {
+      background: #fff;
+      border-bottom: #343434 1px solid;
+      padding: 10px 0;
+      @include easeOut;
+
+      .navbar-logo {
+        height: 35px;
+        width: 35px;
+        @include easeOut;
+      }
+    }
+  }
+}
+
+/*
+* Desktop & Laptops
+*/
+@include mediaLg {}
+
+/*
+* Tablets & Small Laptops
+*/
+@include mediaMd {}
+
+/*
+* Smartphones
+*/
+@include mediaSm {
+
+  body,
+  html {
+    font-size: 0.9em;
+  }
+
+  .lead {
+    font-size: 0.95em;
+  }
+
+  .navbar {
+    .text-logo {
+      display: none;
+    }
+
+    .nav-item {}
+  }
+
+  #home-parallax {
+
+    .home-content {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 0.95em;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #social-page {
+    a .fab {
+      font-size: 1em;
+    }
+  }
+
+}
